@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Garden_Children/1.0.0": {
+        "runtime": {
+          "Garden_Children.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Garden_Children/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
