@@ -10,22 +10,24 @@
 // сада и какой процент.Также сделать функцию вывода информации 
 // о детском саде. Создать три детских сада.
 
-using System.Text.RegularExpressions;
+
+Console.Title = "******";
+Console.BackgroundColor = ConsoleColor.Black;
+Console.ForegroundColor = ConsoleColor.DarkGreen;
+Console.SetWindowSize(100, 30);
+Console.WriteLine("Начало программы детские сады и специализация");
 
 garden one = new garden("Василек","Кирова 105","С физическим уклоном",50);
 one.Show();
 Console.WriteLine();
 garden two = new garden();
+two.input();
 two.Show();
 Console.WriteLine();
 garden three = new garden();
+three.input();
 three.Show();
 
-Console.Title = "******";
-        Console.BackgroundColor = ConsoleColor.Black;
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
-        Console.SetWindowSize(100, 30);
-        Console.WriteLine("Начало программы детские сады и специализация");
 
 
 class garden              // Создаем класс  детский сад
@@ -60,6 +62,13 @@ class garden              // Создаем класс  детский сад
         Console.WriteLine("Адрес: {0}", _adress);
         Console.WriteLine("Специализация :{0}", _description);
         Console.WriteLine("Кол - во детей :{0}", _count_child);
+    }
+    public void input()
+    {
+        Console.WriteLine("Введите количество детей детей: ");
+        _count_child =int.Parse (Console.ReadLine()); // ввод ко-во детей
+        Console.WriteLine("Введите специализацию: ");
+        _description = Console.ReadLine(); // ввод специализации
     }
 }
 
