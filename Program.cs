@@ -74,7 +74,7 @@ class garden              // Создаем класс  детский сад
     public void  num_p() //Написать метод для вывода информации о недоборе или переполнения сада и какой процент
     {
         int proz = ((_max_count_child / _count_child) * 100);
-        Console.WriteLine("прпоцент заполнения садика\n" +proz) ;
+        Console.WriteLine("прпоцент заполнения садика\t" +proz) ;
     }
 }
 
