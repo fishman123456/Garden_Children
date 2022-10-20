@@ -22,6 +22,7 @@ one.Show();
 Console.WriteLine();
 garden two = new garden();
 two.input();
+two.num_p();
 two.Show();
 Console.WriteLine();
 garden three = new garden();
@@ -69,6 +70,11 @@ class garden              // Создаем класс  детский сад
         _count_child =int.Parse (Console.ReadLine()); // ввод ко-во детей
         Console.WriteLine("Введите специализацию: ");
         _description = Console.ReadLine(); // ввод специализации
+    }
+    public void  num_p() //Написать метод для вывода информации о недоборе или переполнения сада и какой процент
+    {
+        int proz = ((_max_count_child / _count_child) * 100);
+        Console.WriteLine("прпоцент заполнения садика\n" +proz) ;
     }
 }
 
